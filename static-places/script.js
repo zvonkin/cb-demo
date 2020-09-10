@@ -59,6 +59,11 @@ var setModel = function (model, entity) {
 
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
+    
+    let link = document.createElement('a')
+    link.setAttribute('href', 'https://www.youtube.com/watch?v=IJNR2EpS0jw')
+    link.setAttribute('title', 'Dumb Ways to Die')
+    div.appendChild(link)
 };
 
 function renderPlaces(places) {
